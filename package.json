@@ -1,0 +1,42 @@
+{
+  "name": "single-byte",
+  "version": "1.0.0",
+  "description": "Transforms for single-byte encodings",
+  "repository": "mhagmajer/single-byte",
+  "bugs": "https://github.com/mhagmajer/single-byte/issues",
+  "license": "MIT",
+  "author": "Marcin Hagmajer",
+  "main": "index.js",
+  "keywords": [
+    "encoding",
+    "iconv",
+    "iso-8859-2",
+    "macintosh",
+    "mazovia",
+    "windows-1250"
+  ],
+  "scripts": {
+    "flow": "flow",
+    "lint": "eslint .",
+    "test": "gulp && node lib && jest",
+    "docs": "gulp docs && documentation readme src/** --section=API --config documentation.yml --markdown-toc=true",
+    "prepublishOnly": "npm run flow && npm run lint && npm test"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "del": "^3.0.0",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "flow-bin": "^0.54.1",
+    "flow-remove-types": "^1.2.1",
+    "gulp": "^3.9.1",
+    "gulp-mirror": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "jest": "^20.0.4",
+    "vinyl": "^2.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

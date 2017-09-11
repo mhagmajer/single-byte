@@ -1,0 +1,11 @@
+toc:
+  - name: UTILITIES
+    description: Basic functions.
+  - encode
+  - decode
+  - name: STREAMS
+    description: Streams
+  - Encoder
+  - Decoder
+  - name: Supported encodings
+    file: Encodings.md

@@ -1,0 +1,12 @@
+extends: airbnb
+parser: babel-eslint
+rules:
+  comma-dangle: 0
+  no-underscore-dangle:
+    - error
+    - allowAfterThis: true
+globals:
+  $Shape: false
+  expect: false
+  jest: false
+  test: false
