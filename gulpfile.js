@@ -143,10 +143,10 @@ gulp.task('docs', () =>
             let prefix;
             if (i === 0) {
               prefix = '';
-            } else if (i % 4 < 3) {
-              prefix = ', ';
-            } else {
+            } else if (i % 4 === 0) {
               prefix = ',<br>';
+            } else {
+              prefix = ', ';
             }
 
             return a + prefix + x;

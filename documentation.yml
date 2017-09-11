@@ -7,5 +7,5 @@ toc:
     description: Streams
   - Encoder
   - Decoder
-  - name: Supported encodings
+  - name: SUPPORTED ENCODINGS
     file: Encodings.md
