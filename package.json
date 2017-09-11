@@ -1,12 +1,12 @@
 {
   "name": "single-byte",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transforms for single-byte encodings",
   "repository": "mhagmajer/single-byte",
   "bugs": "https://github.com/mhagmajer/single-byte/issues",
   "license": "MIT",
   "author": "Marcin Hagmajer",
-  "main": "index.js",
+  "main": "lib/index.js",
   "keywords": [
     "encoding",
     "iconv",

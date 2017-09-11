@@ -14,7 +14,7 @@ based on specification provided by the [Web Hypertext Application Technology Wor
 ### Any environment
 
 ```javascript
-const { encode } = require('single-byte');
+const { encode, decode } = require('single-byte');
 
 const buffer = encode('iso-8859-2', 'zażółć gęślą jaźń');
 console.log(decode('iso-8859-2', buffer));
@@ -56,19 +56,19 @@ Basic functions.
 
 **Parameters**
 
--   `label` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `text` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `label` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
+-   `text` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
 
-Returns **[Buffer](https://nodejs.org/api/buffer.html)** 
+Returns **[Buffer](https://nodejs.org/api/buffer.html)**
 
 ## decode
 
 **Parameters**
 
--   `label` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `buffer` **[Buffer](https://nodejs.org/api/buffer.html)** 
+-   `label` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
+-   `buffer` **[Buffer](https://nodejs.org/api/buffer.html)**
 
-Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
 
 ## STREAMS
 
@@ -81,14 +81,14 @@ Streams
 
 **Parameters**
 
--   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `options` **any** 
+-   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
+-   `options` **any**
 
 ### setSingleByteEncoding
 
 **Parameters**
 
--   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
 
 ## Decoder
 
@@ -96,14 +96,14 @@ Streams
 
 **Parameters**
 
--   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `options` **any** 
+-   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
+-   `options` **any**
 
 ### setSingleByteEncoding
 
 **Parameters**
 
--   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+-   `encoding` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)**
 
 ## SUPPORTED ENCODINGS
 
@@ -138,4 +138,3 @@ Streams
 | [windows-1258](https://encoding.spec.whatwg.org/index-windows-1258.txt)     | cp1258, windows-1258, x-cp1258                                                                                                                                                                |
 | [x-mac-cyrillic](https://encoding.spec.whatwg.org/index-x-mac-cyrillic.txt) | x-mac-cyrillic, x-mac-ukrainian                                                                                                                                                               |
 | `mazovia`                                                                   | cp790, mazovia                                                                                                                                                                                |
-
