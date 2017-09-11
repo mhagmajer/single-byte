@@ -21,6 +21,12 @@ class Encoder extends Transform {
   ): void {
     callback(null, encode(this._encoding, chunk.toString()));
   }
+
+  /**
+   */
+  setSingleByteEncoding(encoding: string) {
+    this._encoding = encoding;
+  }
 }
 
 module.exports.Encoder = Encoder;
@@ -41,6 +47,12 @@ class Decoder extends Transform {
     callback: (error: ?Error, data?: Buffer | string) => void
   ): void {
     callback(null, decode(this._encoding, Buffer.from(chunk)));
+  }
+
+  /**
+   */
+  setSingleByteEncoding(encoding: string) {
+    this._encoding = encoding;
   }
 }
 
