@@ -151,13 +151,13 @@ gulp.task('docs', () =>
 
             return a + prefix + x;
           }, '');
-          let nameLink;
+          let enc;
           if (!custom) {
-            nameLink = `[${name}](https://encoding.spec.whatwg.org/index-${name}.txt)`;
+            enc = `[${name}](https://encoding.spec.whatwg.org/index-${name.toLowerCase()}.txt)`;
           } else {
-            nameLink = `\`${name}\``;
+            enc = `\`${name}\``;
           }
-          this.push(`${nameLink} | ${joinedLabels}\n`);
+          this.push(`${enc} | ${joinedLabels}\n`);
         });
         cb(null);
       },
