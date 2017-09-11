@@ -3,7 +3,7 @@
 Transforms for [single-byte encodings](https://encoding.spec.whatwg.org/#legacy-single-byte-encodings).
 
 Implementation has no dependencies and is based on precomputed indexes for various encodings
-base on specification provided by the [Web Hypertext Application Technology Working Group (WHATWG)](https://en.wikipedia.org/wiki/WHATWG).
+based on specification provided by the [Web Hypertext Application Technology Working Group (WHATWG)](https://en.wikipedia.org/wiki/WHATWG).
 
 ## Installation
 
