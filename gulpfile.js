@@ -172,7 +172,7 @@ gulp.task('clean', () => del([
 ]));
 
 gulp.task('flow-remove-types', ['clean'], () =>
-  gulp.src('src/**/*.js')
+  gulp.src(['src/**/*.js', '!src/**/*.test.js'])
     .pipe(mirror(
       rename({ extname: '.js.flow' }),
       new Transform({
