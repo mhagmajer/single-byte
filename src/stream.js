@@ -1,12 +1,12 @@
 /* @flow */
 
-const { Transform } = require('stream');
+declare var stream: $Exports<'stream'>;
 
 const { encode, decode } = require('./index');
 
 /**
  */
-class Encoder extends Transform {
+class Encoder extends stream.Transform {
   constructor(encoding: string, options?: *) {
     super(options);
     this._encoding = encoding;
@@ -33,7 +33,7 @@ module.exports.Encoder = Encoder;
 
 /**
  */
-class Decoder extends Transform {
+class Decoder extends stream.Transform {
   constructor(encoding: string, options?: *) {
     super(options);
     this._encoding = encoding;

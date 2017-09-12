@@ -72,12 +72,12 @@ Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 ## STREAMS
 
-Streams
+Note: `stream` must be present in the global namespace.
 
 
 ## Encoder
 
-**Extends Transform**
+**Extends stream.Transform**
 
 **Parameters**
 
@@ -92,7 +92,7 @@ Streams
 
 ## Decoder
 
-**Extends Transform**
+**Extends stream.Transform**
 
 **Parameters**
 

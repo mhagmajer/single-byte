@@ -1,6 +1,6 @@
 {
   "name": "single-byte",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Transforms for single-byte encodings",
   "repository": "mhagmajer/single-byte",
   "bugs": "https://github.com/mhagmajer/single-byte/issues",

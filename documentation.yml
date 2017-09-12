@@ -4,7 +4,7 @@ toc:
   - encode
   - decode
   - name: STREAMS
-    description: Streams
+    description: "Note: `stream` must be present in the global namespace."
   - Encoder
   - Decoder
   - name: SUPPORTED ENCODINGS
