@@ -20,7 +20,7 @@ const buffer = encode('iso-8859-2', 'zażółć gęślą jaźń');
 console.log(decode('iso-8859-2', buffer));
 ```
 
-### Environment supporting Node.js streams API
+### Environment supporting Node.js stream API
 
 ```javascript
 const fs = require('fs');
