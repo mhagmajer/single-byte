@@ -2,7 +2,7 @@
 
 Transforms for [single-byte encodings](https://encoding.spec.whatwg.org/#legacy-single-byte-encodings).
 
-Implementation has no dependencies and is based on precomputed indexes for various encodings
+Implementation has no dependencies and isss based on precomputed indexes for various encodings
 based on specification provided by the [Web Hypertext Application Technology Working Group (WHATWG)](https://en.wikipedia.org/wiki/WHATWG).
 
 ## Installation
@@ -139,3 +139,6 @@ Note: `stream` must be present in the global namespace.
 | [x-mac-cyrillic](https://encoding.spec.whatwg.org/index-x-mac-cyrillic.txt) | x-mac-cyrillic, x-mac-ukrainian                                                                                                                                                               |
 | `mazovia`                                                                   | cp790, mazovia                                                                                                                                                                                |
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc5NzQ0NjcwMl19
+-->
